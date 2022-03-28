@@ -34,6 +34,8 @@
             this.specialbutton = new System.Windows.Forms.Button();
             this.outputlabel = new System.Windows.Forms.Label();
             this.startbutton = new System.Windows.Forms.Button();
+            this.picturebox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // titlelabel
@@ -78,7 +80,7 @@
             // 
             // outputlabel
             // 
-            this.outputlabel.Location = new System.Drawing.Point(80, 145);
+            this.outputlabel.Location = new System.Drawing.Point(82, 196);
             this.outputlabel.Name = "outputlabel";
             this.outputlabel.Size = new System.Drawing.Size(318, 110);
             this.outputlabel.TabIndex = 4;
@@ -94,19 +96,30 @@
             this.startbutton.UseVisualStyleBackColor = true;
             this.startbutton.Click += new System.EventHandler(this.startbutton_Click);
             // 
+            // picturebox
+            // 
+            this.picturebox.Location = new System.Drawing.Point(12, 12);
+            this.picturebox.Name = "picturebox";
+            this.picturebox.Size = new System.Drawing.Size(460, 171);
+            this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturebox.TabIndex = 7;
+            this.picturebox.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 405);
             this.Controls.Add(this.startbutton);
-            this.Controls.Add(this.outputlabel);
             this.Controls.Add(this.specialbutton);
             this.Controls.Add(this.rightbutton);
             this.Controls.Add(this.leftbutton);
             this.Controls.Add(this.titlelabel);
+            this.Controls.Add(this.picturebox);
+            this.Controls.Add(this.outputlabel);
             this.Name = "Form1";
             this.Text = "Give ";
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -119,6 +132,7 @@
         private System.Windows.Forms.Button specialbutton;
         private System.Windows.Forms.Label outputlabel;
         private System.Windows.Forms.Button startbutton;
+        private System.Windows.Forms.PictureBox picturebox;
     }
 }
 
