@@ -107,5 +107,29 @@
   <ItemGroup>
     <None Include="Resources\townii.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m8b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\136542__joelaudio__electric-zap-001.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\431117__inspectorj__door-front-opening-a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\208431__vitawrap__pop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\471095__spycrah__sword-clash-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\561789__alphatone__electronic-engine-idle-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42106__marcuslee__laser-wrath-4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120557__mredig__elevator-door-open.aiff" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

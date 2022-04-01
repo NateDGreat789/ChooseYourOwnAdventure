@@ -185,12 +185,14 @@ namespace ChooseYourOwnAdventure
                     leftbutton.Text = "Pick it up!";
                     rightbutton.Text = "Leave it.";
                     picturebox.Image = Properties.Resources.doorstep;
+                    SoundPlayer popPlayer = new SoundPlayer();
                     break;
                 case 2:
                     outputlabel.Text = "You got transported to the past! Your town is replaced by a medieval village with a castle in the distance in the middle of a thunderstorm! You try to travel back to the present but the machine is out of power.";
                     leftbutton.Text = "Go to the castle!";
                     rightbutton.Text = "Shelter in a farmhouse.";
                     picturebox.Image = Properties.Resources.townii;
+                    SoundPlayer popPlayer = new SoundPlayer();
                     break;
                 case 3:
                     outputlabel.Text = "A battle is raging! An army of defending troops against a skilled group of invaders. Sword clashes ring through the air. What do you do?";
