@@ -19,6 +19,12 @@ namespace ChooseYourOwnAdventure
         bool apple = false;
         bool powerBlock = false;
 
+        SoundPlayer swordPlayer = new SoundPlayer(Properties.Resources.sword);
+        SoundPlayer doorPlayer = new SoundPlayer(Properties.Resources.door);
+        SoundPlayer enginePlayer = new SoundPlayer(Properties.Resources.engine);
+        SoundPlayer popPlayer = new SoundPlayer(Properties.Resources.pop);
+        SoundPlayer laserPlayer = new SoundPlayer(Properties.Resources.laser);
+
         Random randGen = new Random();
 
         public Form1()
@@ -185,86 +191,100 @@ namespace ChooseYourOwnAdventure
                     leftbutton.Text = "Pick it up!";
                     rightbutton.Text = "Leave it.";
                     picturebox.Image = Properties.Resources.doorstep;
-                    SoundPlayer popPlayer = new SoundPlayer();
+                    doorPlayer.Play();
                     break;
                 case 2:
                     outputlabel.Text = "You got transported to the past! Your town is replaced by a medieval village with a castle in the distance in the middle of a thunderstorm! You try to travel back to the present but the machine is out of power.";
                     leftbutton.Text = "Go to the castle!";
                     rightbutton.Text = "Shelter in a farmhouse.";
                     picturebox.Image = Properties.Resources.townii;
-                    SoundPlayer popPlayer = new SoundPlayer();
+                    popPlayer.Play();
                     break;
                 case 3:
                     outputlabel.Text = "A battle is raging! An army of defending troops against a skilled group of invaders. Sword clashes ring through the air. What do you do?";
                     leftbutton.Text = "Join the battle!";
                     rightbutton.Text = "Climb the castle.";
                     picturebox.Image = Properties.Resources.castle;
+                    swordPlayer.Play();
                     break;
                 case 4:
                     outputlabel.Text = "You duck under many arrows and hop over fallen swords before reaching the castle. You find some cracked bricks to climb and scale the massive castle. You almost reach the top spire before slipping and collapsing on the roof. Now what?"; ;
                     leftbutton.Text = "Keep climbing to the top!";
                     rightbutton.Text = "Break through the window to the throne room!";
+                    swordPlayer.Play();
                     break;
                 case 5:
                     outputlabel.Text = "You knock on the door and a woman walks out. When you ask for shelter she quizzes you \"What crop am I farming?\"";
                     leftbutton.Text = "Oranges?";
                     rightbutton.Text = "Apples?";
                     picturebox.Image = Properties.Resources.farmhouse;
+                    doorPlayer.Play();
                     break;
                 case 6:
                     outputlabel.Text = "She rushes you inside. \"Those invaders always strike during a storm!\" She gives you an apple. You need to recharge the time machine, maybe with lightning? What do you do?";
                     leftbutton.Text = "Climb the chimney.";
                     rightbutton.Text = "Throw it onto an apple tree.";
+                    doorPlayer.Play();
                     break;
                 case 7:
                     outputlabel.Text = "You got transported to the future! A technological city with floating cars and a skyscraper through the clouds! But your machine is out of power so you're stranded here.";
                     leftbutton.Text = "Hop in a flying car.";
                     rightbutton.Text = "Go to a skyscraper!";
                     picturebox.Image = Properties.Resources.city;
+                    popPlayer.Play();
                     break;
                 case 8:
                     outputlabel.Text = "The car is very shiny with glass screens everywhere. The guy driving looks at you very confused. \"Uhh, what are you doing?\"";
                     leftbutton.Text = "Trying a flying car, duh!";
                     rightbutton.Text = "Trying to charge my time machine!";
                     picturebox.Image = Properties.Resources.car;
+                    enginePlayer.Play();
                     break;
                 case 9:
                     outputlabel.Text = "The man relaxes. \"Oh, of course!You must be new here.I can charge that for you,\" he points to a futuristic power block, \"but I'd like to asks you some questions first.\"";
                     leftbutton.Text = "Go along with it.";
                     rightbutton.Text = "Grab the power block for yourself.";
+                    enginePlayer.Play();
                     break;
                 case 10:
                     outputlabel.Text = "The massive sign says \"Goople Canada\". You walk in and see an elevator and a front desk. What do you do?";
                     leftbutton.Text = "Get in the elevator.";
                     rightbutton.Text = "Ask the front desk.";
                     picturebox.Image = Properties.Resources.skyscraper;
+                    laserPlayer.Play();
                     break;
                 case 11:
                     outputlabel.Text = "The secretary stands up and shouts at you but the elevator doors close, but there are no elevator buttons. You wait in the rising elevator for three minutes before the door opens on the top floor. There is electricity sparking everywhere in this development sector. Now what?";
                     leftbutton.Text = "Jump into one of the experiments";
                     rightbutton.Text = "Run through and jump out the window";
+                    doorPlayer.Play();
                     break;
                 case 101:
                     leftbutton.Text = "Yes";
                     rightbutton.Text = "No";
+                    popPlayer.Play();
                     break;
                 case 102:
                     outputlabel.Text = "You made your way home! Congrats!... Play again?";
                     leftbutton.Text = "Yes";
                     rightbutton.Text = "No";
+                    popPlayer.Play();
                     break;
                 case 201:
                     leftbutton.Text = "Continue";
                     rightbutton.Text = "";
+                    popPlayer.Play();
                     break;
                 case 202:
                     leftbutton.Text = "Continue";
                     rightbutton.Text = "";
+                    popPlayer.Play();
                     break;
                 case 203:
                     leftbutton.Text = "Continue";
                     rightbutton.Text = "";
                     Refresh();
+                    popPlayer.Play();
                     break;
             }
         }
